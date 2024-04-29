@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="/Scripts/GreetThingy.js"></script>
+    
+    <script type="module"> //in your head, b4 title
+        import { initialise } from "./Scripts/menu.js";
+        initialise("index.html"); // Call the initialise function with a test argument
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLY JEANS</title>
 </head>
+
 <body>
 
 <header>
+
+    
     <nav>
         <ul>    
             <li><a href="index.html">Home</a></li>
                <li><a href="../Blogpost/blogpost.html">Blog</a></li>
-               <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
-               <li><a href="../About me/About.html">About me</a></li>
+               <li><a href="../WSOA3028A_2549471/About me/About.html">About me</a></li>
+               <li><a href="portfolio/portfolio.html">Portfolio</a></li>
                <li><a href="../essay/essay.html">Essays</a></li>
                <li><a href="../Design/Designs.html">Designs</a></li>
         </ul>
+        
     </nav>
 </header>
 
@@ -25,8 +36,15 @@
         <header>
             <h1>Welcome to BILLY JEANS</h1>
         </header>
-        <p>Explore our collection of trendy jeans that redefine fashion.</p>
+        <p>I named it that cause of micheal jackson we share the same nickname and cause i like baggy jeans. dont judge.</p>
     </article>
+
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput">
+    <button onclick="displayGreeting()">Submit</button>
+
+    <p id="greeting"></p>
+    
 </main>
 
 <aside></aside>
@@ -35,5 +53,7 @@
     <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
 </footer>
 
+
+<img src="/My images/thirsttrap  of me/IMG_3457.jpg" alt="Rushboy" width="450" height="600" title="Design" loading="eager" style="border: 1px solid black;">
 </body>
 </html>

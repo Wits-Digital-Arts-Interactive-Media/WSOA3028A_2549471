@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="module"> //in your head, b4 title
+        import { initialise } from "./Scripts/menu.js";
+        initialise("Home"); // Call the initialise function with a test argument
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
@@ -24,19 +29,58 @@
         <h2>Latest Blog Posts</h2>
         <ul>
             <li>
-                <h3><a href="../Blogpost/Blogpost1.html">Blog Post 1 Title</a></h3>
-                <p>This is a brief summary or excerpt of Blog Post 1...</p>
+                <h3><a href="../Blogpost/Blogpost1.html">Blog Post 1 </a></h3>
+              
             </li>
             <li>
-                <h3><a href="../Blogpost/Blogpost2.html">Blog Post 2 Title</a></h3>
-                <p>This is a brief summary or excerpt of Blog Post 2...</p>
+                <h3><a href="../Blogpost/Blogpost2.html">Blog Post 2 </a></h3>
+                
             </li>
-            <!-- Add additional list items for each blog post -->
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost3.html">Blog Post 3 </a></h3>
+                
+            </li>
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost4.html">Blog Post 4 </a></h3>
+             
+            </li>
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost5.html">Blog Post 5 </a></h3>
+               
+            </li>
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost6.html">Blog Post 6 </a></h3>
+              
+            </li>
+
+            
+            <li>
+                <h3><a href="../Blogpost/Blogpost8.html">Blog Post 8 </a></h3>
+               
+            </li>
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost9.html">Blog Post 9 </a></h3>
+             
+            </li>
+
+            <li>
+                <h3><a href="../Blogpost/Blogpost10.html">Blog Post 10 </a></h3>
+              
+            </li>
+
+                <!-- Add additional list items for each blog post -->
         </ul>
     </main>
 
     <footer>
         <p>&copy; 2024 BILLY JEANS. All rights reserved</p>
     </footer>
+     <button onclick="scrollToTop()">Scroll To Top</button>
+    <script src="/scripts/scrollToTop.js"></script>
 </body>
 </html>

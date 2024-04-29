@@ -23,5 +23,12 @@ export function initialise(currentPage) {
         } else { li.innerText = menuItem.name }
         ul.appendChild(li)                                   //adds it to the unordered list we made at the beginning
     }
+    
     nav.appendChild(ul)
+    a.addEventListener('mouseover', () => {
+        a.style.fontSize = '1.2em';
+    });
+    a.addEventListener('mouseout', () => {
+        a.style.fontSize = '1em';
+    });
 }

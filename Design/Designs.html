@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="module"> //in your head, b4 title
+        import { initialise } from "./Scripts/menu.js";
+        initialise("Home"); // Call the initialise function with a test argument
+    </script>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>BILLY JEANS</title>
@@ -48,6 +52,7 @@
     </ul>
 </main>
 
-
+<button onclick="scrollToTop()">Scroll To Top</button>
+<script src="/scripts/scrollToTop.js"></script>
   </body>
 </html>
