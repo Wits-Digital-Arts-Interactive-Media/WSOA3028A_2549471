@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <script type="module">
-
-        import { initialise } from "../Scripts/menus.js";
-        initialise("Portfolio");
-    </script>
-    <script src="../Scripts/menus.js" type="module"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="describe" content="Portfolio">
     <meta name="author" content="Makhado Khasahne">
     <meta name="Description" content="Portfolio">
-    <meta name="keywords" content="
-    Makhado,
-    MJ,
-    Khashane,
-    portfolio,
-   Portfolio Work
-    ">
-
+    <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Portfolio Work">
     
-    <title>Portfolio - BILLY JEANS</title>
+    <script type="module" src="../Scripts/menus.js"></script>
+    <script type="module">
+        import { initialise } from "../Scripts/menus.js";
+        initialise("Portfolio");
+    </script>
+
+    <title>Portfolio - RUSHBITE</title>
 </head>
 <body>
 
 <header>
     <nav>
-      
+        <!-- You can add navigation links here if needed -->
     </nav>
 </header>
 
@@ -39,24 +30,27 @@
             <h1>Portfolio</h1>
         </header>
         <section>
-            <h2>Project 1</h2>
-            <p>Animations</p>
-            <figure>
-                <img src="project1.jpg" alt="Project 1 Image">
-                <figcaption>Project 1 Image</figcaption>
-            </figure>
+            <h2>Project 1: Animated Shorts</h2>
+            <p>An assortment of short animated films showcasing various styles and techniques.</p>
+            <a href="https://youranimationsportfolio.com" target="_blank">View Animation Portfolio</a>
         </section>
-        <section>
-            <h2>Project 2</h2>
-            <p>Games</p>
-            <figure>
-                <img src="project2.jpg" alt="Project 2 Image">
-                <figcaption>Project 2 Image</figcaption>
-            </figure>
-        </section>
+       
         <!-- Add more sections for additional projects -->
+
+        <section>
+            <h2>Follow RUSHBITE on Social Media</h2>
+            <p>Stay updated with our latest creations and behind-the-scenes content by following RUSHBITE on social media:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/rushbite/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@rushbite" target="_blank">TikTok</a></li>
+            </ul>
+        </section>
     </article>
 </main>
+
+<footer>
+    <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+</footer>
 
 </body>
 </html>

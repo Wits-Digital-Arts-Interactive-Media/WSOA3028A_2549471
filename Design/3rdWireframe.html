@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <script type="module" src="../Scripts/menus.js"></script>
+   <script type="module">
+       import { initialise } from "../Scripts/menus.js";
+       initialise("Home");
+   </script>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="describe" content="Designs">
@@ -13,48 +18,7 @@
    portfolio,
    Designs
    ">
-   <title>BILLY JEANS</title>
-   <style>
-      body {
-         font-family: Arial, sans-serif;
-         margin: 0;
-         padding: 0;
-      }
-      header {
-         background-color: #000;
-         color: #fff;
-         padding: 20px;
-      }
-      nav ul {
-         list-style-type: none;
-         margin: 0;
-         padding: 0;
-      }
-      nav ul li {
-         display: inline;
-         margin-right: 20px;
-      }
-      nav ul li a {
-         color: #fff;
-         text-decoration: none;
-         font-size: 16px;
-      }
-      nav ul li a:hover {
-         color: #ccc;
-      }
-      main {
-         padding: 20px;
-      }
-
-      img {
-         width: 50%; /* Adjust the percentage as needed */
-         height: auto; /* Maintain aspect ratio */
-         display: block; /* Ensure images are displayed as block elements */
-         margin: 20px auto; /* Add margin for spacing */
-      }
-   </style>
-   
-   <title>UI WIREFRAME IMAGES</title>
+   <title>BILLY JEANS - UI WIREFRAME IMAGES</title> <!-- Combined both titles -->
 </head>
 <body>
    <header>
@@ -64,9 +28,11 @@
        </nav>
    </header>
 
- <img src="/My images/Iteration 2/Green and Blue Playful Illustrative Mind Map.png" alt="Mind Map" width="300" height="200" title="Design" loading="eager" style="border: 1px solid black;">
- <img src="/My images/Iteration 2/the flow.png" alt="FlowChart" width="300" height="200" title="Design" loading="eager" style="border: 1px solid black;">
- <button onclick="scrollToTop()">Scroll To Top</button>
- <script src="../Scripts/scrolltotop.js"></script>
+   <img src="/My images/Iteration 2/Green and Blue Playful Illustrative Mind Map.png" alt="UI Wireframe Mind Map" width="300" height="200" title="Design" loading="eager" style="border: 1px solid black;">
+   <img src="/My images/Iteration 2/the flow.png" alt="UI Wireframe Flowchart" width="300" height="200" title="Design" loading="eager" style="border: 1px solid black;">
+   <!-- Added alt text describing the content of each image -->
+   
+   <button onclick="scrollToTop()">Scroll To Top</button>
+   <script src="../Scripts/scrolltotop.js"></script>
 </body>
 </html>
