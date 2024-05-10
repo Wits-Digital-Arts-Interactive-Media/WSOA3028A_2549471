@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="module">
+
+        import { initialise } from "./Scripts/menus.js";
+        initialise("Home");
+    </script>
+    <script src="./Scripts/menus.js" type="module"></script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="describe" content="Blogs">
@@ -13,25 +20,19 @@ Khashane,
 portfolio,
 Blog
 ">
-    <script type="module"> //in your head, b4 title
-        import { initialise } from "./Scripts/menu.js";
-        initialise("Home"); // Call the initialise function with a test argument
-    </script>
+<script type="module">
 
+    import { initialise } from "../Scripts/menus.js";
+    initialise("Blogs");
+</script>
+<script src="../Scripts/menus.js" type="module"></script>
     <title>Blog</title>
 </head>
 <body>
     <header>
         <h1>My Weekly Blogs</h1>
         <nav>
-            <ul>    
-                <li><a href="../Blogpost/index.html">Home</a></li>
-                   <li><a href="../Blogpost/blogpost.html">Blog</a></li>
-                   <li><a href="../About me/About.html">About me</a></li>
-                   <li><a href="../portfolio/portfolio.html">Portfolio</a></li>  
-                   <li><a href="../essay/essay.html">Essays</a></li>
-                   <li><a href="../Design/Designs.html">Designs</a></li>
-            </ul>
+            
         </nav>
     </header>
  
