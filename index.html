@@ -27,6 +27,17 @@
     <script type="module">
         import { initialise } from "./Scripts/menus.js";
         initialise("Home");
+
+        // Function to handle click events on cartoon folders
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartoonBoxes = document.querySelectorAll('.cartoonBox');
+            cartoonBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url;
+                });
+            });
+        });
     </script>
     <title>BILLY JEANS</title>
 </head>
@@ -39,11 +50,11 @@
     </header>
 
     <div class="cartoonBoxContainer">
-        <div class="cartoonBox" data-url="./Blogpost/blogpost.html">Blogs</div>
-        <div class="cartoonBox" data-url="./essay/essay.html">Essays</div>
-        <div class="cartoonBox" data-url="./Design/designs.html">Design</div>
-        <div class="cartoonBox" data-url="./portfolio/portfolio.html">Portfolio</div>
-        <div class="cartoonBox" data-url="./About me/about.html">About</div>
+        <div class="cartoonBox" data-url="./Blogpost/blogpost.html" id="blogs">Blogs</div>
+        <div class="cartoonBox" data-url="./essay/essay.html" id="essays">Essays</div>
+        <div class="cartoonBox" data-url="./Design/designs.html" id="designs">Design</div>
+        <div class="cartoonBox" data-url="./portfolio/portfolio.html" id="portfolio">Portfolio</div>
+        <div class="cartoonBox" data-url="./About me/about.html" id="about">About</div>
     </div>
 
     <footer>
