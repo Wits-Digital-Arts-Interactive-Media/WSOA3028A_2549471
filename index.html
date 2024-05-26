@@ -8,8 +8,8 @@
     <meta name="Description" content="index.html">
     <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Homepage">
     <link rel="stylesheet" href="./Styles/PixelStyling.css">
-    <link rel="stylesheet" href="./Styles/CardStyling.css">
-    <script src="./Scripts/CardInteraction.js" defer></script>
+    <link rel="stylesheet" href="./Styles/CartoonBoxStyling.css">
+    <script src="./Scripts/CartoonBoxInteraction.js" defer></script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -27,17 +27,6 @@
     <script type="module">
         import { initialise } from "./Scripts/menus.js";
         initialise("Home");
-
-        // Function to handle click events on cartoon folders
-        document.addEventListener('DOMContentLoaded', function() {
-            const cartoonBoxes = document.querySelectorAll('.cartoonBox');
-            cartoonBoxes.forEach(box => {
-                box.addEventListener('click', function() {
-                    const url = this.getAttribute('data-url');
-                    window.location.href = url;
-                });
-            });
-        });
     </script>
     <title>BILLY JEANS</title>
 </head>
@@ -45,16 +34,15 @@
     <header id="mainHeader">
         <h1 id="animated-text">Welcome to BILLY JEANS</h1>
         <p>I named it that cause of Michael Jackson we share the same nickname and cause I like baggy jeans. Don't judge.</p>
-        
        
     </header>
 
     <div class="cartoonBoxContainer">
-        <div class="cartoonBox" data-url="./Blogpost/blogpost.html" id="blogs">Blogs</div>
-        <div class="cartoonBox" data-url="./essay/essay.html" id="essays">Essays</div>
-        <div class="cartoonBox" data-url="./Design/designs.html" id="designs">Design</div>
-        <div class="cartoonBox" data-url="./portfolio/portfolio.html" id="portfolio">Portfolio</div>
-        <div class="cartoonBox" data-url="./About me/about.html" id="about">About</div>
+        <div class="cartoonBox" data-url="./Blogpost/blogpost.html">Blogs</div>
+        <div class="cartoonBox" data-url="./essay/essay.html">Essays</div>
+        <div class="cartoonBox" data-url="./Design/designs.html">Design</div>
+        <div class="cartoonBox" data-url="./portfolio/portfolio.html">Portfolio</div>
+        <div class="cartoonBox" data-url="./About me/about.html">About</div>
     </div>
 
     <footer>
