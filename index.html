@@ -7,8 +7,10 @@
     <meta name="author" content="Makhado Khasahne">
     <meta name="Description" content="index.html">
     <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Homepage">
-    <link rel="stylesheet" href="./Styles/main.css">
     
+    <link rel="stylesheet" href="./Styles/PixelStyling.css">
+    <link rel="stylesheet" href="./Styles/CardStyling.css">
+    <script src="./Scripts/CardStyling.js" defer></script>
     
     <script type="application/ld+json">
         {
@@ -22,16 +24,10 @@
             }
         }
     </script>
-
-    
     
     <script type="module" src="./Scripts/GreetThingy.js"></script>
     <script type="module" src="./Scripts/WelcomeText.js"></script>
-    <script type="module" src="./Scripts/menus.js"></script>
-    <script type="module">
-        import { initialise } from "./Scripts/menus.js";
-        initialise("Home");
-    </script>
+    
     <title>BILLY JEANS</title>
 </head>
 
@@ -49,27 +45,31 @@
             <h1 id="animated-text">Welcome to BILLY JEANS</h1>
         </header>
         <p>I named it that cause of Michael Jackson we share the same nickname and cause I like baggy jeans. Don't judge.</p>
+        
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput">
+        <button onclick="displayGreeting()">Submit</button>
+
+        <p id="greeting"></p>
     </article>
-
-    <label for="nameInput">Enter your name:</label>
-    <input type="text" id="nameInput">
-    <button onclick="displayGreeting()">Submit</button>
-
-    <p id="greeting"></p>
 </main>
+
+<div class="cartoonBoxContainer">
+    <div class="cartoonBox" data-url="./Blogpost/blogpost.html">Blogs</div>
+    <div class="cartoonBox" data-url="./essay/essay.html">Essays</div>
+    <div class="cartoonBox" data-url="./Design/designs.html">Design</div>
+    <div class="cartoonBox" data-url="./portfolio/portfolio.html">Portfolio</div>
+    <div class="cartoonBox" data-url="./About me/about.html">About</div>
+</div>
 
 <aside>
     <!-- Aside content can be added here if needed -->
 </aside>
 
 
-
-<img src="../WSOA3028A_2549471/My images/thirsttrap  of me/IMG_3457.jpg" alt="Rushboy" width="450" height="600" title="Design" loading="eager" style="border: 1px solid black;">
-</body>
-
 <footer>
     <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
 </footer>
 
+</body>
 </html>
-
