@@ -13,6 +13,18 @@
         import { initialise } from "../Scripts/menus.js";
         initialise("Blogs");
     </script>
+
+   <script type="module">
+   import { initialiseBlog } from "../Scripts/BlogsNav.js";
+   initialiseBlog("Blogpost2");
+    </script>
+   <script src="../Scripts/BlogsNav.js"></script>
+
+   <!---For Scroll to top-->
+   <script src="../Scripts/scrolltotop.js"></script>
+
+
+
    <title>Billy Jeans</title>
    
 </head>
@@ -79,6 +91,11 @@
    
    </main>
    
+
+   <a href="Blogpost3.html">Next</a>
+
+   <button onclick="scrollToTop()">Scroll up</button>
+
    <footer>
       <nav>
          <ul>
@@ -95,7 +112,6 @@
       </nav>
    </footer>
    
-   <button onclick="scrollToTop()">Scroll To Top</button>
-   <script src="/scripts/scrollToTop.js"></script>
+  
 </body>
 </html>
