@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="module" src="../Scripts/menus.js"></script>
-    <script type="module">
-        import { initialise } from "../Scripts/menus.js";
-        initialise("Home");
-    </script>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="describe" content="Designs">
@@ -18,6 +14,23 @@
     portfolio,
     Designs
     ">
+
+    <script type="module" src="../Scripts/menus.js"></script>
+    <script type="module">
+        import { initialise } from "../Scripts/menus.js";
+        initialise("Home");
+    </script>
+
+    <script type="module">
+
+    import { initialise } from "../Scripts/menus.js";
+    initialise("Design");
+    </script>
+    <script src="../Scripts/menus.js" type="module"></script>
+
+    <!---For Scroll to top-->
+    <script src="../Scripts/scrolltotop.js"></script>
+
     <title>Style Guide - BILLY JEANS</title>
    
 </head>
@@ -87,8 +100,9 @@
     <img src="../My images/STYLE GUIDE PHOTOS/6.png" alt="Design" width="300" height="200" title="Design" loading="eager" style="border: 1px solid black;">
     <img src="../My images/STYLE GUIDE PHOTOS/7.png" alt="Colour Palette" width="300" height="200" title="Colour Palette" loading="eager" style="border: 1px solid black;">
 </main>
-<button onclick="scrollToTop()">Scroll To Top</button>
-<script src="../Scripts/scrolltotop.js"></script>
+
+    <a href="../essay/essay.html">ESSAY</a>    
+    <button onclick="scrollToTop()">Scroll up</button>
 
 <footer>
     <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
