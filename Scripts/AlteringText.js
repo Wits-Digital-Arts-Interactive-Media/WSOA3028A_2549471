@@ -1,6 +1,6 @@
 const blogTexts = document.getElementsByClassName("changableText");
 const toTexts = ["Imagining the Internet","Interaction and the www","Interaction Design for the Web","The IxD Process / Headers and Microformats","RSA Website","The Ethics of UI & UX Practice","Internet, Society and Design Justice"," The World in www","Digital Inequalities","Digital Coloniality","Decolonising Technology","Ethical Internet"];
-const backTexts = ["Blog Post 1 ","Blog Post 2","Blog Post 3","Blog Post 4","Blog Post 5","Blog Post 6","Blog Post 8","Blog Post 9","Blog Post 10","Blog Post 11","Blog Post 12"];
+const backTexts = ["Blog Post 1 ","Blog Post 2","Blog Post 3","Blog Post 4","Blog Post 5","Blog Post 6","Blog Post 8","Blog Post 9","Blog Post 10","Blog Post 11","Blog Post 12","Blog Post 13"];
 
 
 for(let i= 0; i < blogTexts.length; i++){
