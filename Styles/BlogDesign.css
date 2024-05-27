@@ -64,12 +64,11 @@ main article {
     border: 5px solid #333;
     border-radius: 15px;
     margin: 20px auto 40px; /* Adjusted margin-bottom */
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     max-width: 800px;
     box-shadow: 5px 5px #333;
     text-align: left;
 }
-
 
 main article header h2 {
     font-size: 1.5em;
@@ -148,4 +147,16 @@ button {
 
 button:hover {
     background-color: #ffcc00; /* Light orange on hover */
+}
+
+/* New styles for ordered list */
+ol {
+    padding-left: 20px; /* Optional, for better indentation */
+}
+
+ol li {
+    margin-bottom: 15px; /* Add margin to create space between list items */
+    font-size: 1em; /* Adjust font size if needed */
+    color: #333; /* Adjust text color if needed */
+    line-height: 1.6; /* Adjust line height if needed */
 }
