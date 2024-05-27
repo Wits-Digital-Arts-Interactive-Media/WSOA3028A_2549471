@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const cartoonBoxes = document.getElementsByClassName('cartoonBox');
+    const cartoonBoxClass = 'cartoonBox';
+    const cartoonBoxes = document.getElementsByClassName(cartoonBoxClass);
 
-    for (let f = 0; f < cartoonBoxes.length; f++) {
-        cartoonBoxes[f].addEventListener("click", clickedOnCartoonBox);
+    for (let i = 0; i < cartoonBoxes.length; i++) {
+        cartoonBoxes[i].addEventListener("click", clickedOnCartoonBox);
     }
 
     function clickedOnCartoonBox(event) {
-        const clickedBox = event.currentTarget;
-        const url = clickedBox.getAttribute('data-url');
+        const clickedCartoonBox = event.currentTarget;
+        const url = clickedCartoonBox.getAttribute('data-url');
         if (url) {
             window.location.href = url;
         }
