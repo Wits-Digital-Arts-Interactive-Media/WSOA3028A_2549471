@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #98b8ba; /* Light blue background for a cartoonish feel */
+    background-color: #98b8ba; /* Light peach background for a cartoonish feel */
     width: 100%;
     overflow-x: hidden;
 }
@@ -31,7 +31,15 @@ html, body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
+.cartoonBox img,
+.cartoonBox gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add spacing below */
+    max-height: 200px; /* Limit the maximum height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
 
 .cartoonBox:hover {
     transform: scale(1.1);
