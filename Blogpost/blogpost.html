@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="describe" content="Blogs">
-    <meta name="author" content="Makhado Khasahne">
-    <meta name="Description" content="Blogpost">
-    <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Blog">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="describe" content="Blogs">
+        <meta name="author" content="Makhado Khasahne">
+        <meta name="Description" content="Blogpost">
+        <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Blog">
 
-    <script type="module" src="../Scripts/menus.js"></script>
-    <script type="module">
-        import { initialise } from "../Scripts/menus.js";
-        initialise("Blogs");
-    </script>
+        <link rel="stylesheet" href="../Styles/Blogstyle.css">
+       
+        <script type="module" src="../Scripts/menus.js"></script>
+        <script type="module">
+            import { initialise } from "../Scripts/menus.js";
+            initialise("Blogs");
+        </script>
+        <script type="module" src="../Scripts/AlteringText.js"></script>
+        <script src="../Scripts/scrolltotop.js"></script>
 
-    <title>Blog</title>
-</head>
-<body>
-    <header>
-        <h1>My Weekly Blogs</h1>
-        <nav>
-            <!-- Navigation content can be added here if needed -->
+
+        <title>Blog</title>
+
+    </head>
+
+        <header>
+            <h1>My Weekly Blogs</h1>
+            <nav class="navBar">
+            
         </nav>
     </header>
+
+
+<body>
+    
  
+
+
+    
     <main>
         <h2>Latest Blog Posts</h2>
-        <ul>
-            <li>
-                <h3><a href="../Blogpost/Blogpost1.html">Blog Post 1 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost2.html">Blog Post 2 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost3.html">Blog Post 3 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost4.html">Blog Post 4 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost5.html">Blog Post 5 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost6.html">Blog Post 6 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost8.html">Blog Post 8 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost9.html">Blog Post 9 </a></h3>
-            </li>
-            <li>
-                <h3><a href="../Blogpost/Blogpost10.html">Blog Post 10 </a></h3>
-            </li>
-            <!-- Add additional list items for each blog post -->
-        </ul>
+        <nav id="blogSelection">
+            <ul>
+                <ul>
+                    <li class="selectable"><a href="../Blogpost/Blogpost1.html"><p class="changableText">Blog Post 1</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost2.html"><p class="changableText">Blog Post 2</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost3.html"><p class="changableText">Blog Post 3</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost4.html"><p class="changableText">Blog Post 4</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost5.html"><p class="changableText">Blog Post 5</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost6.html"><p class="changableText">Blog Post 6</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost8.html"><p class="changableText">Blog Post 8</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost9.html"><p class="changableText">Blog Post 9</p></a></li>
+                    <li class="selectable"><a href="../Blogpost/Blogpost10.html"><p class="changableText">Blog Post 10</p></a></li>
+                </ul>
+                
+            </ul>            
+        </nav>   
     </main>
+               
 
+                <button onclick="scrollToTop()">Scroll up</button>
     <footer>
         <p>&copy; 2024 BILLY JEANS. All rights reserved</p>
     </footer>
     
-    <button onclick="scrollToTop()">Scroll To Top</button>
-    <script src="/scripts/scrollToTop.js"></script>
+    
 </body>
 </html>

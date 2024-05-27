@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #ffefd5; /* Light peach background for a cartoonish feel */
+    background-color: #98b8ba; /* Light peach background for a cartoonish feel */
     width: 100%;
     overflow-x: hidden;
 }
@@ -9,7 +9,7 @@ html, body {
 .cartoonBoxContainer {
     display: flex;
     gap: 20px;
-    height: 400px;
+    height: auto;
     position: relative;
     padding: 20px;
     margin: 0 auto;
@@ -29,6 +29,16 @@ html, body {
     border: 5px solid #000; /* Black border for cartoon outline */
     box-shadow: 5px 5px 0 #000; /* Shadow effect for a cartoon look */
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartoonBox img,
+.cartoonBox gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add spacing below */
+    max-height: 200px; /* Limit the maximum height */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
 .cartoonBox:hover {

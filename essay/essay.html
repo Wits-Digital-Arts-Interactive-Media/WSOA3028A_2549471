@@ -10,32 +10,42 @@
 
     <script type="module">
 
-        import { initialise } from "/Scripts/menus.js";
+        
+        import { initialise } from "../Scripts/menus.js";
         initialise("Essays");
     </script>
     <script src="../Scripts/menus.js" type="module"></script>
+      
+    <link rel="stylesheet" href="../Styles/Designpage.css">
+    <link rel="stylesheet" href="../Styles/PixelStyling.css">
+    <link rel="stylesheet" href="../Styles/CartoonBoxStyling.css">
 
     <title>Essays - BILLY JEANS</title>
 </head>
 <body>
     <header>
         <h1>BILLY JEANS</h1>
+        <nav class="navBar">
+            
+        </nav>
     </header>
 
-    <nav>
-        <!-- Navigation content can be added here if needed -->
-    </nav>
+   
 
     <main>
-        <section>
-            <h2>Essays</h2>
-            <ul class="essay-list">
-                <li>
-                    <a href="../essay/my written essays/Title_ Ethics, UI, UX, and Interaction_ A Comprehensive Analysis of Takealot's Website.pdf" target="_blank">Essay 1: UX & UI Analysis</a>
-                </li>
-                <!-- Add more essays as needed -->
-            </ul>
+        <section> 
+            <h1>Essays </h1>
+            <div class="button-container cartoonBoxContainer">
+                <a href="../essay/my written essays/Title_ Ethics, UI, UX, and Interaction_ A Comprehensive Analysis of Takealot's Website.pdf"  class="cartoonBox" id="Week1Hover">
+                    <img src="../My images/Business/OIP.jpg" alt="Essay Image">
+                    Essay 1 - UX & UI Analysis
+                </a>
+                
+            </div>
+            
+    
         </section>
+    
     </main>
 </body>
 </html>
