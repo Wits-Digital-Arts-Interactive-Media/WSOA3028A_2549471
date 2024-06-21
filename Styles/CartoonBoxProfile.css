@@ -47,7 +47,7 @@ html, body {
 }
 
 .cartoonText {
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
     color: #000;
     text-align: center;
 }

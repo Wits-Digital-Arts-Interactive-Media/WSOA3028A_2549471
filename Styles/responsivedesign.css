@@ -1,5 +1,15 @@
-/* Responsive Design
-still a work in progress */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+
+/* Base Styles */
+body, html {
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
 
 /* Large Screens: 1500x800 */
 @media (max-width: 1500px) {
