@@ -9,6 +9,11 @@ const blogItems = [
     {name: "Blogpost6", href: `${root}/Blogpost/Blogpost6.html`},
     {name: "Blogpost7", href: `${root}/Blogpost/Blogpost7.html`},
     {name: "Blogpost8", href: `${root}/Blogpost/Blogpost8.html`},
+    {name: "Blogpost8", href: `${root}/Blogpost/Blogpost9.html`},
+    {name: "Blogpost8", href: `${root}/Blogpost/Blogpost10.html`},
+    {name: "Blogpost8", href: `${root}/Blogpost/Blogpost11.html`},
+    {name: "Blogpost8", href: `${root}/Blogpost/Blogpost12.html`},
+    {name: "Blogpost8", href: `${root}/Blogpost/Blogpost13.html`},
  
 ];
 
