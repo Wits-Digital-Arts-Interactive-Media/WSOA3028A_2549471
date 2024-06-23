@@ -1,11 +1,13 @@
 /* Container to center the buttons */
 .button-container {
     display: flex;
+    flex-direction: column; /* Stack buttons vertically */
     justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items to the top */
-    height: 100vh; /* Adjust height as needed */
+    align-items: center; /* Align items to the center */
+    margin-bottom: 20px; /* Add some space between buttons and bottom of page */
 }
 
+/*... rest of the CSS remains the same... */
 /* Original button styling */
 button {
     background-color: #ff6600;
@@ -26,6 +28,14 @@ button {
 button:hover {
     background-color: #ffcc00;
     border-color: #000;
+}
+
+/* Container to move arrow buttons to the right */
+.arrow-button-container {
+    margin-left: 50%; /* Move arrow buttons to the right */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* Styling for the arrow buttons */
