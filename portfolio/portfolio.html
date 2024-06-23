@@ -8,17 +8,26 @@
     <meta name="Description" content="Portfolio">
     <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Portfolio Work">
     
-    <link rel="stylesheet" href="../Styles/responsivedesign.css">
+   
     <link rel="stylesheet" href="../Styles/Designpage.css">
-    <link rel="stylesheet" href="../Styles/PixelStyling.css">
+  
     <link rel="stylesheet" href="../Styles/CartoonBoxProfile.css">
+    <link rel="stylesheet" href="../Styles/responsivedesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+    
+   
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
         initialise("Portfolio");
     </script>
-    <script src="../Scripts/arrowbutton.js"></script>
-    <script src="../Scripts/BlogButtons.js"></script>
+  
+
+  <script type="module" src="../Scripts/arrowbutton.js"></script>
+  <script type="module" src="../Scripts/BlogButtons.js"></script>
+  
+  <script src="../Scripts/scrolltotop.js"></script>
 
     <title>Portfolio</title>
 </head>
@@ -72,31 +81,32 @@
             </div>
         </div>
         
-        <a href="../about/about.html">Enter Profile Page </a> 
+        
     </main>
     </article>
+
+     
 </main>
 
-<button class="back-to-top" data-target="#top">Scroll Up</button>
+        
    
-               
+        <button onclick="scrollToTop()">Scroll up</button>
+
         <div class="button-container">
            
-            <button class="arrow-button" data-target="essay.html">
-                <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+            <button class="arrow-button" data-target="../essay/essay.html">
+                <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="60" height="60">
             </button>
             
-            <button class="arrow-button" data-target="design.html">
-                <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+            <button class="arrow-button" data-target="../designs/design.html">
+                <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="60" height="60">
             </button>
             
             </div>
      
       
-      
+     
     
-
-
 <footer>
     <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
 </footer>

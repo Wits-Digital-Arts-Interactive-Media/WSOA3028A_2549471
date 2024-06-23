@@ -104,26 +104,6 @@ footer {
     position: relative;
 }
 
-.scroll-to-top {
-    position: relative;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #add8e6; /* Light blue button background */
-    color: #333; /* Dark text color */
-    border: 2px solid #333; /* Dark border */
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-family: 'Press Start 2P', cursive; /* Pixel font for button */
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    margin-top: 20px;
-}
-
-.scroll-to-top:hover {
-    transform: scale(1.1);
-    background-color: #ff6600; /* Dark orange on hover */
-}
 
 a {
     display: block;
