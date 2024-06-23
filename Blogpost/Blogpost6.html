@@ -10,14 +10,18 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
         initialise("Blogs");
     </script>
-
-  <!---For Scroll to top-->
-  <script src="../Scripts/scrolltotop.js"></script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
 
     
@@ -36,6 +40,43 @@
    </header>
 
    <main>
+
+    <section class="blogs">
+        <button class="active">Blog 6</button>
+
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+        
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+                      
+        <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+        
+        <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+        
+        <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+
+        
+             
+    </section>
+
+
     <article>
         <h2>Exploring Ethical Challenges in Software Engineering</h2>
         <p>Upon delving into Bryan Cantrill's discourse on Andreessen's Corollary, I found myself immersed in the realm of ethical dilemmas that permeate the landscape of design. Cantrill's insights shed light on numerous examples, offering fresh perspectives on the ethical considerations inherent in the design process. It becomes apparent that understanding past missteps is crucial to avoiding their recurrence, not only on an individual level but also by broadening our comprehension through the examination of others' errors, thus cultivating a diverse understanding of societal ethical quandaries.</p>
@@ -62,12 +103,33 @@
         
         
 
-        <button onclick="scrollToTop()">Scroll up</button>
+
 
     </article>
 
-    <a href="Blogpost8.html">Next</a>
+    
 
    </main>
+
+   <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost5.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost8.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+   <footer>
+    <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+ </footer>
+
    </body>
    </html>

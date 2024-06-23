@@ -10,15 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
         initialise("Blogs");
     </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
-
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
 
    <title>Billy Jeans</title>
    
@@ -32,6 +36,40 @@
    </header>
 
    <main>
+
+    <section class="blogs">
+        <button class="active">Blog 9</button>
+
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+        
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+        
+        <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+        
+        <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+        
+        <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+             
+    </section>
+
     <article>
         <h2>Exploring the Digital Canvas: Navigating the Intersection of Power and Information Accessibility</h2>
         <p>In the dynamic realm of digital landscapes, where the echoes of the Covid-19 pandemic reverberate alongside the resonance of societal shifts, the discourse on information accessibility emerges as a pivotal arena of exploration. Delving into this realm, the seminal work by Graham, De Sabbata, and Zook (2015), "Towards a Study of Information Geographies," unveils a nuanced tapestry of insights illuminating the interplay between information dissemination and geographical localization.</p>
@@ -84,10 +122,29 @@
         <p>By incorporating these suggestions and blending artistry with accessibility, I can improve the user experience of my HTML website and create a digital presence that reflects my creative vision and values.</p>
     </article>
 
-    <a href="Blogpost10.html">Next</a>
-
-    <button onclick="scrollToTop()">Scroll up</button>
+    
 
    </main>
+
+   <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost8.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost10.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+   <footer>
+    <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+ </footer>
+
 </body>
 </html>

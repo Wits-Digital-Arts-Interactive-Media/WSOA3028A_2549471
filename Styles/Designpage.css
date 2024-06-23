@@ -182,3 +182,12 @@ a {
 a:hover {
     background-color: #ffcc00; /* Light orange on hover */
 }
+
+.description {
+    background-color: #F50000;
+    padding: 20px;
+    border-radius: 20px;
+    border: 8px solid black; /* Added black border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+

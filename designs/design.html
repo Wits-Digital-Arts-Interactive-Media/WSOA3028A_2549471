@@ -8,6 +8,8 @@
    <meta name="Description" content="Design Page">
    <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Designs">
 
+   <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
    <link rel="stylesheet" href="../Styles/responsivedesign.css">
    <link rel="stylesheet" href="../Styles/Designpage.css">
 
@@ -18,6 +20,8 @@
         initialise("Design");
     </script>
    <script src="../Scripts/scrolltotop.js"></script>
+   <script src="../Scripts/arrowbutton.js"></script>
+   <script src="../Scripts/BlogButtons.js"></script>
    
    <title>UI WIREFRAME IMAGES</title>
 </head>
@@ -27,13 +31,23 @@
       <nav class="navBar">
       </nav>
    </header>
+
+  
 <body>
    <main>
+
+      <h2>IDX PROCESS</h2>
+      <ul>
+         <li><h3><a href="idxprocess.html">IDX PROCESS</a></h3></li>
+      </ul>
+
+
       <h2>WIREFRAMES</h2>
       <ul>
          <li><h3><a href="1stWireframe.html">Iteration 1</a></h3></li>
          <li><h3><a href="2ndWireframe.html">Iteration 2</a></h3></li>
-         <li><h3><a href="3rdWireframe.html">Iteration 3</a></h3></li>
+         <li><h3><a href="3rdWireframe.html">Final Wireframe</a></h3></li>
+       
       </ul>
 
       <h2>STYLE GUIDE</h2>
@@ -46,5 +60,27 @@
          <li><h4><a href="Implementation.html">IMPLEMENTATION NOTES</a></h4></li>
       </ul>
    </main>
+
+   <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="portfolio.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="about.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+   <footer>
+      <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+   </footer>
+
+
 </body>
 </html>

@@ -15,6 +15,8 @@
     Designs
     ">
     
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/Designpage.css">
     <script type="module">
@@ -23,8 +25,8 @@
     </script>
     <script src="../Scripts/menus.js" type="module"></script>
 
-    <!---For Scroll to top-->
-    <script src="../Scripts/scrolltotop.js"></script>
+    <script src="../Scripts/arrowbutton.js"></script>
+   <script src="../Scripts/BlogButtons.js"></script>
 
     <title>Implementation Notes </title>
    
@@ -175,8 +177,23 @@
             <p>By strategically using CSS and JavaScript, I aim to currently Create a cohesive and engaging website that reflects the playful and creative nature of my brand. The cartoonish pixel art theme, combined with interactive features, ensures a unique and enjoyable user experience. Continuous learning and refinement, guided by tutorials, class lectures, and documentation, enable me to implement advanced features and address any challenges that arise. This approach not only brings my wireframes to life but also aligns with best practices in web design and development.</p>
         </section>
 
-    <a href="../about/about.html">About Me</a>    
-    <button onclick="scrollToTop()">Scroll up</button>
+     </main>
+
+     <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="finalstyleguide.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="about.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
 
 <footer>
     <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>

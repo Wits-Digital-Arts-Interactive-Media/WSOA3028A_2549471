@@ -10,13 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
-        initialise("Blogpost13");
+        initialise("Blogs");
     </script>
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
+
 
    <title>Billy Jeans</title>
    
@@ -29,6 +35,40 @@
    </header>
 
    <main>
+
+     <section class="blogs">
+            <button class="active">Blog 13</button>
+
+            <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+            
+            <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+            
+            <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+            
+            <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+            
+            <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+            
+            <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+                  
+            <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+            
+            <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+            
+            <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+            
+            <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+            
+            <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+            <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+            
+
+            
+                 
+        </section>
+
     <article>
         <header>
             <h2>Reflecting on the Internet as an Ethical Space</h2>
@@ -57,9 +97,8 @@
             <h3>Intellectual Property Concerns</h3>
             <p>As an artist, protecting my work online is a constant worry. Digital art can be easily copied and shared without permission, which undermines our rights as creators. We need better systems to protect our work while still encouraging sharing and collaboration.</p>
         </section>
-    </article>
+   
 
-    <article>
         <header>
             <h2>CSS Implementation Process</h2>
         </header>
@@ -73,9 +112,9 @@
             <h2>Ongoing Work</h2>
             <p>Currently, I am focusing on refining the grid layout to ensure consistency and visual harmony. Aligning elements and spacing them evenly has required tweaking and testing across different browsers to maintain the responsive design I aim for. I’m also enhancing the interactive elements, such as buttons and hyperlinks, by adding hover effects and animations that align with my aesthetic of vibrant sophistication. Ensuring that the high-resolution images load efficiently without compromising the site’s performance is another area I am diligently working on, using responsive images and optimizing file sizes. Overall, while there have been setbacks, each challenge has brought me closer to creating a visually stunning and immersive digital experience as envisioned in my style guide.</p>
         </section>
-    </article>
+  
 
-    <article>
+ 
         <header>
             <h2>Improvements Made</h2>
         </header>
@@ -102,9 +141,30 @@
     </article>
 
     
-    <a href="Additionalreflection.html">+REFLECTION</a>
-    <button onclick="scrollToTop()">Scroll up</button>
+   
+    
 
      </main>
+
+     <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost12.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Additionalreflection.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+     <footer>
+        <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+     </footer>
+
      </body>
      </html>

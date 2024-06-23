@@ -10,6 +10,9 @@
 
         <link rel="stylesheet" href="../Styles/responsivedesign.css">
         <link rel="stylesheet" href="../Styles/Blogstyle.css">
+        <link rel="stylesheet" href="../Styles/arrow button.css">
+        <link rel="stylesheet" href="../Styles/Button.css">
+
        
         <script type="module" src="../Scripts/menus.js"></script>
         <script type="module">
@@ -18,6 +21,8 @@
         </script>
         <script type="module" src="../Scripts/AlteringText.js"></script>
         <script src="../Scripts/scrolltotop.js"></script>
+        <script type="module" src="../Scripts/arrowbutton.js"></script>
+        <script type="module" src="../Scripts/BlogButtons.js"></script>
 
 
         <title>Blog</title>
@@ -60,10 +65,25 @@
                 
             </ul>            
         </nav>   
-    </main>
-               
 
-                <button onclick="scrollToTop()">Scroll up</button>
+        <button class="back-to-top" data-target="#top">Scroll Up</button>
+        
+    </main>
+
+    
+    
+    <div class="button-container">
+        <button class="arrow-button" data-target="blogpost.html">
+            <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+        </button>
+        
+        <button class="arrow-button" data-target="Blogpost2.html">
+            <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+        </button>
+        
+        </div>          
+
+               
     <footer>
         <p>&copy; 2024 BILLY JEANS. All rights reserved</p>
     </footer>

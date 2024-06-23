@@ -10,16 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
         initialise("Blogs");
     </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
-   
-
-   <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
 
 
 
@@ -36,6 +39,38 @@
  
    <main>
      
+      <section class="blogs">
+         <button class="active">Blog 2</button>
+         
+         <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+         
+         <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+         
+         <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+         
+         <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+         
+         <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+                 
+         <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+         
+         <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+         
+         <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+         
+         <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+         
+         <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+         <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+         <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+         
+
+         
+              
+     </section>
       
       <article>
         <h2>My Weekly Blog Entry - Week 2</h2>
@@ -86,14 +121,23 @@
          <!-- MY reflection content goes here -->
       </article>
 
-     
+      <button class="back-to-top" data-target="#top">Scroll Up</button>
    
    </main>
    
-
-   <a href="Blogpost3.html">Next</a>
-
-   <button onclick="scrollToTop()">Scroll up</button>
+   
+               
+   <div class="button-container">
+       <button class="arrow-button" data-target="blogpost1.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost3.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+   
 
    <footer>
       <nav>
@@ -101,14 +145,18 @@
          <p>Inspirational Websites</p>
 
          <ul>
-            <li><a href="https://corteiz.co/en/">Corteiz</a></li>
+            
             <li><a href="https://www.brokenplanet.com/shop">Broken Planet</a></li>
             <li><a href="https://www.vicinityclo.de/">VicinityClo</a></li>
          </ul>
+
+             <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+
       </nav>
     
    </footer>
    
+  
   
 </body>
 </html>

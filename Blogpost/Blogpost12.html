@@ -10,13 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
-        initialise("Blogpost12");
+        initialise("Blogs");
     </script>
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
+
     
    <title>Billy Jeans</title>
    
@@ -30,6 +36,39 @@
 
    <main>
     
+
+    <section class="blogs">
+        <button class="active">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+        
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+        
+        <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+              
+        <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+        
+        <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+   
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+             
+    </section>
 
     <article>
         
@@ -51,9 +90,9 @@
             <h2>Strengths and Weaknesses</h2>
             <p>One strength of the VAP methodology is its systematic approach to embedding values into game design, which can lead to more socially conscious and impactful games. However, a potential weakness is the challenge of balancing these values with other game design requirements, such as entertainment and commercial viability. Relating this to theories covered in my interactive media class, the VAP methodology reflects principles from Participatory Design and Value Sensitive Design, which emphasise user involvement and ethical considerations in the design process. Yet, implementing these values consistently can be complex and may require more extensive research and resources.</p>
         </section>
-    </article>
+  
 
-    <article>
+   
         <header>
             <h2>Reflection on CSS, HTML, and JS Integration</h2>
         </header>
@@ -78,9 +117,29 @@
 
 
     
-    <a href="Blogpost13.html">NEXT</a>
-    <button onclick="scrollToTop()">Scroll up</button>
+    
 
      </main>
+
+     <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost11.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost13.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+     <footer>
+        <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+     </footer>
+
      </body>
      </html>

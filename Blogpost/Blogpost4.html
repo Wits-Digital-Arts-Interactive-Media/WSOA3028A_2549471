@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="describe" content="Blogs">
-   <meta name="author" content="Makhado Khasahne">
-   <meta name="Description" content="Blogpost">
-   <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Blog">
-
-   <link rel="stylesheet" href="../Styles/responsivedesign.css">
-   <link rel="stylesheet" href="../Styles/BlogDesign.css">
-   <script type="module" src="../Scripts/menus.js"></script>
-   <script type="module">
-       import { initialise } from "../Scripts/menus.js";
-       initialise("Blogs");
-   </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="describe" content="Blogs">
+    <meta name="author" content="Makhado Khasahne">
+    <meta name="Description" content="Blogpost">
+    <meta name="keywords" content="Makhado, MJ, Khashane, portfolio, Blog">
+    
+    <link rel="stylesheet" href="../Styles/responsivedesign.css">
+    <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
 
 
-     <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
+
+    <script type="module" src="../Scripts/menus.js"></script>
+    <script type="module">
+        import { initialise } from "../Scripts/menus.js";
+        initialise("Blogs");
+    </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
 
-   <title>Billy Jeans</title>
-   
-</head>
-<body>
-   <header> 
-      <h1>BILLY JEANS</h1>
-      <nav class="navBar">
-            
-      </nav>
-   </header>
+      <title>Billy Jeans</title>
+      
+   </head>
+   <body>
+      <header> 
+         <h1>BILLY JEANS</h1>
+         <nav class="navBar">
+               
+         </nav>
+      </header>
    
    <main>
+
+      <section class="blogs">
+         <button class="active">Blog 4</button>
+         
+         <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+         
+         <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+         
+         <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+                 
+         <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+         
+         <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+         
+         <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+         
+         <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+         
+         <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+         
+         <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+         
+         <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+         <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+         <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+         
+
+         
+              
+     </section>
+
       <article>
          <h2>My Weekly Blog Entry - Week 4</h2>
          <p>Reflecting on Peta Goldberg's lecture slides on the Interaction Design (IxD) process has been an enlightening experience, providing valuable insights into the fundamental concepts and principles that underpin user experience (UX) and user interface (UI) design. The two slides, titled "UX the Basics How to" and "IxD UI UX Process," delved into various topics essential for understanding and implementing effective design strategies.</p>
@@ -45,21 +81,20 @@
          <p>In summary, Peta Goldberg's lecture slides provided a comprehensive overview of essential concepts and principles in UX and UI design, from understanding the distinctions between UX and UI to mastering the intricacies of visual composition and user interaction. As I continue to delve deeper into the IxD process, I look forward to applying these insights to my design practice, creating experiences that are not only visually appealing but also intuitive, engaging, and meaningful for users.</p>
      
      
-         <!-- More paragraphs can be added for detailed content -->
-      </article>
+         
       
-      <article>
+     
          <h2>This Week's Learning Journey</h2>
          <p>This week, I delved into a plethora of new semantic markup through YouTube tutorials, broadening my understanding of how to structure web content effectively. Here are some key takeaways:</p>
-      </article>
+   
 
-      <article>
+   
          <h2>Semantic Markup for Content</h2>
          <p>I learned about the importance of using semantic elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;aside&gt;</code> to provide meaning and structure to my HTML content. These elements not only improve accessibility but also enhance search engine optimization by clearly defining the purpose of different sections within a webpage.</p>
-         <!-- More paragraphs can be added for detailed content -->
-      </article>
+        
+  
 
-      <article>
+  
          <h2>Navigation Markup</h2>
          <p>Learning about the <code>&lt;nav&gt;</code> element provided valuable insights into creating accessible and user-friendly navigation menus. Incorporating <code>&lt;nav&gt;</code> tags around my navigation links not only improves the semantic structure of my HTML but also communicates to assistive technologies that this section contains navigation-related content.</p>
          <!-- More paragraphs can be added for detailed content -->
@@ -68,13 +103,24 @@
       <!-- More articles for each of my week's reflections -->
    </main>
    
-   <footer>
+   <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
       
-         <a href="Blogpost5.html">Next</a>
+       <button class="arrow-button" data-target="blogpost3.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost5.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
 
-         <button onclick="scrollToTop()">Scroll up</button>
-      </nav>
+   <footer>
+      <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
    </footer>
-  
+   
 </body>
 </html>

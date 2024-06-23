@@ -10,14 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
-        initialise("Blogpost11");
+        initialise("Blogs");
     </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
     
    <title>Billy Jeans</title>
    
@@ -30,6 +35,40 @@
    </header>
 
    <main>
+
+    <section class="blogs">
+        <button class="active">Blog 11</button>
+
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+        
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+        
+        <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+        
+        <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+        
+        <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+             
+    </section>
+
     <article>
         <header>
             <h2>Week 11 - Blog Post</h2>
@@ -60,9 +99,9 @@
 
             <p>Incorporating JavaScript has transformed my website from a static collection of pages into a dynamic and interactive experience. The changes have not only improved the usability but also made the website feel more cohesive and professional. By focusing on the informational and navigational components, I have ensured that my website is both easy to use and engaging for my audience. This process has highlighted the importance of interactive design in creating a positive user experience, a key takeaway from my interactive media class.</p>
         </section>
-    </article>
+  
 
-    <article>
+    
         <header>
             <h2>Decolonizing Digital Spaces: A Reflection</h2>
         </header>
@@ -98,9 +137,30 @@
     </article>
 
     
-    <a href="Blogpost12.html">NEXT</a>
-    <button onclick="scrollToTop()">Scroll up</button>
+   
 
      </main>
+
+     <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost10.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost12.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+     <footer>
+        <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+     </footer>
+
+
      </body>
      </html>

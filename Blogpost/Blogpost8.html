@@ -10,16 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
         initialise("Blogs");
     </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
-
-
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
 
    <title>Billy Jeans</title>
    
@@ -33,7 +36,45 @@
    </header>
 
    <main>
-    <section>
+
+    <section class="blogs">
+        <button class="active">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+        
+        <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+        
+        <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+        
+        <button class="blog-container" data-target="Blogpost10.html">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+        
+        <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+             
+    </section>
+
+
+   
+
+<article> 
+
         <h2>Exploring the Significance of Internet Access: A Critical Examination</h2>
         <p>Amidst the backdrop of the Covid-19 pandemic and the tumultuous socio-political landscape characterized by events like the Black Lives Matter protests in the United States, the discourse surrounding internet access as a fundamental right has gained unprecedented traction. Spyros Kasapis' article, "Internet Access is a Fundamental Right," articulates a poignant argument advocating for the recognition of internet access as a basic human right, particularly in light of the pandemic-induced lockdowns and heightened reliance on digital connectivity.</p>
         <p>The pandemic has served as a crucible, laying bare the profound social inequities perpetuated by the digital divide. As Ranchordás (2020) elucidates, digital inequality emerges as a salient manifestation of the broader digital divide, exacerbating disparities in access to education, healthcare, and essential information. Against the backdrop of the Black Lives Matter protests, which galvanized global attention and catalyzed conversations surrounding systemic racism and social justice, the imperative of internet access becomes even more pronounced. The protests, fueled by widespread outrage over racial injustice and police brutality, underscored the pivotal role of digital platforms in facilitating activism and amplifying marginalized voices.</p>
@@ -48,12 +89,33 @@
             <li>Daniolou, C. (2020). The Need for Global Internet Connectivity.</li>
             <li>Williams, D.P. Fitting the description: historical and sociotechnical elements of facial recognition and anti-black surveillance.</li>
         </ul>
-    </section>
+       
+</article> 
 
-    <a href="Blogpost9.html">Next</a>
-
-    <button onclick="scrollToTop()">Scroll up</button>
+    
 
    </main>
+
+   <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost6.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost9.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+   <footer>
+    <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+ </footer>
+
+
    </body>
    </html>

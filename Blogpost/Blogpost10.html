@@ -10,14 +10,19 @@
     
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/BlogDesign.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
+
+
+
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
-        initialise("Blogpost10");
+        initialise("Blogs");
     </script>
+    <script type ="module" src="../Scripts/BlogButtons.js"></script>
+    <script type ="module" src="../Scripts/arrowbutton.js"></script>
 
-           <!---For Scroll to top-->
-   <script src="../Scripts/scrolltotop.js"></script>
     
    <title>Billy Jeans</title>
    
@@ -30,6 +35,40 @@
    </header>
 
    <main>
+
+    <section class="blogs">
+        <button class="active">Blog 10</button>
+        
+        <button class="blog-container" data-target="Blogpost1.html">Blog 1</button>
+
+        <button class="blog-container" data-target="Blogpost2.html">Blog 2</button>
+        
+        <button class="blog-container" data-target="Blogpost3.html">Blog 3</button>
+        
+        <button class="blog-container" data-target="Blogpost4.html">Blog 4</button>
+        
+        <button class="blog-container" data-target="Blogpost5.html">Blog 5</button>
+        
+        <button class="blog-container" data-target="Blogpost6.html">Blog 6</button>
+        
+        <button class="blog-container" data-target="Blogpost8.html">Blog 8</button>
+        
+        <button class="blog-container" data-target="Blogpost9.html">Blog 9</button>
+             
+        <button class="blog-container" data-target="Blogpost11.html">Blog 11</button>
+        
+        <button class="blog-container" data-target="Blogpost12.html">Blog 12</button>
+
+        <button class="blog-container" data-target="Blogpost13.html">Blog 13</button>
+
+        <button class="blog-container" data-target="Additionalreflection.html">Blog 14</button>
+
+        
+
+        
+             
+    </section>
+
     <article>
         <h2>Bridging the Digital Divide: A Reflection on Social Capital and Digital Inequality</h2>
         <p>In today's interconnected world, access to digital technology has become a defining factor in social and economic opportunities. As I delved into "Social Capital and the Three Levels of Digital Divide" by Rulu and Ragnedda (2017), I couldn't help but reflect on the profound implications of digital inequality and its impact on diverse communities worldwide.</p>
@@ -48,9 +87,29 @@
     </article>
 
     
-    <a href="Blogpost11.html">NEXT</a>
-    <button onclick="scrollToTop()">Scroll up</button>
+   
 
      </main>
+
+     <button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="blogpost9.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       
+       <button class="arrow-button" data-target="Blogpost11.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+     <footer>
+        <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+     </footer>
+
      </body>
      </html>

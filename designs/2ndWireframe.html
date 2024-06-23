@@ -17,14 +17,17 @@
 
     <link rel="stylesheet" href="../Styles/responsivedesign.css">
     <link rel="stylesheet" href="../Styles/Designpage.css">
+    <link rel="stylesheet" href="../Styles/arrow button.css">
+    <link rel="stylesheet" href="../Styles/Button.css">
     <script type="module" src="../Scripts/menus.js"></script>
     <script type="module">
         import { initialise } from "../Scripts/menus.js";
-        initialise("Home");
+        initialise("Design");
     </script>
 
         <!---For Scroll to top-->
-<script src="../Scripts/scrolltotop.js"></script>
+        <script src="../Scripts/arrowbutton.js"></script>
+        <script src="../Scripts/BlogButtons.js"></script>
     
    <title>BILLY JEANS</title>
    
@@ -246,7 +249,26 @@
 </article>
 </main>
 
-<a href="../designs/3rdWireframe.html">Next</a>
+<button class="back-to-top" data-target="#top">Scroll Up</button>
+   
+               
+   <div class="button-container">
+      
+       <button class="arrow-button" data-target="1stWireframe.html">
+           <img src="../My images/Business/arrow left.png" class="arrow button" alt="Back" width="70" height="70">
+       </button>
+       blogpost13
+       <button class="arrow-button" data-target="3rdWireframe.html">
+           <img src="../My images/Business/arrow right.png" class="arrow button" alt="Next" width="70" height="70">
+       </button>
+       
+       </div>
+
+
+
+<footer>
+    <p>&copy; 2024 BILLY JEANS. All rights reserved.</p>
+ </footer>
 
 </body>
 </html>
