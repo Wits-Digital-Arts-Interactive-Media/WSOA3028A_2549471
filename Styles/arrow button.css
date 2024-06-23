@@ -16,10 +16,13 @@
 }
 
 .arrow-button .arrow-icon {
+    border: 2px solid #000;
     width: 100%; /* Set width of icon to fill button */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Position absolute for overlaying */
     top: 50%; /* Align icon vertically */
     left: 50%; /* Align icon horizontally */
     transform: translate(-50%, -50%); /* Center icon */
+    border: 5px solid #000; /* Black border for cartoon outline */
+  box-shadow: 5px 5px 0 #000; /* Shadow effect for a cartoon look */
 }
