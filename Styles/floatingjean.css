@@ -1,0 +1,24 @@
+#floating-jean {
+    position: absolute; /* Use absolute positioning */
+    bottom: 0; /* Move the jean to the bottom of the page */
+    left: 50%; /* Center the jean horizontally */
+    transform: translateX(-50%); /* Center the jean horizontally */
+    cursor: pointer; /* Change cursor shape on hover */
+    z-index: 1; /* Ensure the jean is on top of the footer */
+    margin-bottom: -350px; /* Move the jean below the footer */
+}
+  #floating-jean:hover {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
